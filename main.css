@@ -92,7 +92,7 @@ body {
     }
     .header .navbar{
         position:fixed;
-        top:-120%;left:0;
+        top: 28px;right:130%;
         height:auto;
         width:100%;
         background-color:#fff;
@@ -119,6 +119,11 @@ body {
     }
     .header .nav-toogle{
         top:5.8rem;
+    }
+    .header{
+        justify-content: flex-end;
+        background-color: white;
+        color: #000;
     }
 }
 
@@ -156,6 +161,9 @@ body {
 	color: #fff;
 	font-family: kamerik-3d;
 }
+
+
+
 .logo {
 	--logo-size: calc(var(--index) * 7.8);
 	width: var(--logo-size);
@@ -1070,7 +1078,7 @@ html{
 
 
 .overover{
-    height: 130vh;
+    height: 110vh;
     width: 100%;
     overflow: scroll;
     /* background: linear-gradient(to bottom, rgba(5, 5, 20, 0.9), rgba(20, 20, 40, 0.6), rgba(0, 0, 0, 0)); */
