@@ -72,3 +72,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     setInterval(updateSpotlight, 3000);
 });
+
+
+
+
+$(document).ready(function() {
+	$("#chaingestyle").click(function() {
+		let box = $(".navbar");
+		let currentRight = box.css("right");
+
+		if (currentRight === "0px") {
+			box.css("right", "130%");
+		} else {
+			box.css("right", "0");
+		}
+	});
+});
