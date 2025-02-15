@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reggae+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+/* headerr */
+
 .header {
+  font-family: poppins,sans-serif;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -17,13 +20,12 @@
   background: rgba(255, 255, 255, 0.2); /* Light transparent white */
   backdrop-filter: blur(10px); /* Creates the hazy effect */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
-  font-family: 'Poppins', Arial, sans-serif;
 }
 .scrolled {
   background-color: #1e3a8a; /* Change this to your preferred shade of blue */
 }
 .header .logo{
-  font-size:2rem;
+  font-size:2.5rem;
   color:#fff;
 
 }
@@ -40,7 +42,7 @@
   margin:0 1.6rem;
 }
 .header .navbar ul li a{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color:#fff;
   text-decoration: none;
 }
@@ -58,7 +60,7 @@
   }
   .header .navbar{
       position:fixed;
-      top:-120%;left:0;
+      top: 24px;right:130%;
       height:auto;
       width:100%;
       background-color:#fff;
@@ -86,9 +88,15 @@
   .header .nav-toogle{
       top:5.8rem;
   }
+  .header{
+      justify-content: flex-end;
+      background-color: white;
+      color: #000;
+  }
 }
 
 /* headerr */
+
 
 
 
