@@ -558,6 +558,9 @@ section{
     background-color: black;
     opacity: 0.79;
     border-radius: 2rem;
+       width: 100%;
+
+
 }
 
 /* .events .box-container .box:hover img{
