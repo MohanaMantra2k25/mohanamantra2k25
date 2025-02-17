@@ -40,10 +40,6 @@ function showDay(day) {
     contents[0].classList.add("active_"); // Show the first content
   });
 
-let originalSrc = "images/hii_1920x1056.mp4"; // Default video source
-        let hoverSrc = "images/2nd.mp4"; // Dimmed hover video
-        let clickSrc = "images/3rd.mp4"; // Normal brightness video
-        let timeoutId;
 
         function changeVideoSource(newSrc, isClicked = false) {
             let video = $("#videoPlayer");
