@@ -38,17 +38,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     // Animated Counter
-    let count = 0;
-    const totalSponsors = 11; // Change this based on actual count
-    const counterElement = document.getElementById("sponsor-counter");
-    const interval = setInterval(() => {
-        if (count < totalSponsors) {
-            count++;
-            counterElement.textContent = count;
-        } else {
-            clearInterval(interval);
-        }
-    }, 100);
+        let count = 0;
+        const totalSponsors = 11; // Change this based on actual count
+        const counterElement = document.getElementById("sponsor-counter");
+        const interval = setInterval(() => {
+            if (count < totalSponsors) {
+                count++;
+                counterElement.textContent = count;
+            } else {
+                clearInterval(interval);
+            }
+        }, 100);
 
     // Sponsor Spotlight Animation
     const sponsors = [
