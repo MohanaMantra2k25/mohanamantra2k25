@@ -75,8 +75,8 @@
                 <li><a href="./index.html">Hub</a></li>
                 <li><a href="Events/login.html">Events</a></li>
                 <li><a href="sponsers/index.html">Sponsors</a></li>
-                <li><a  onclick="sponsor()" id="schedules">Schedule</a></li>
-                <li><a  id="faqs">FAQ</a></li>
+                <li><a  onclick="scrollToSection()" >Schedule</a></li>
+                <li><a onclick="scrollToSection2()" >FAQ</a></li>
 
             </ul>
         </nav>
@@ -87,6 +87,7 @@
 
 
 
+<div class="overover" id="over_over">
 
 <div id="d1" class="d1">
 
@@ -95,7 +96,7 @@
 	<section class="layers">
 		<div class="layers__container">
 			<div class="layers__item layer-1">
-				<video autoplay muted playsinline class="background-video" id="videoPlayer">
+				<video autoplay muted playsinline loop class="background-video" id="videoPlayer">
 					<source src="images/hii_1920x1056.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
@@ -105,7 +106,7 @@
 				<div class="hero-content">
 					<!-- <h1>Natural Forest <span>HTML / CSS</span></h1> -->
 					<!-- <div class="hero-content__p">Creating a beautiful 3D website with a ‘lens effect’</div> -->
-					<button class="button-start" id="open-modal-btn">Get Set Go</button>
+					<button class="button-start" id="open-modal-btn">G.e.t S.e.t G.o...</button>
 				</div>
 			</div>
 			<div class="layers__item layer-4">
@@ -118,16 +119,15 @@
 
 </div>
 
-<div class="overover" id="over_over">
 <!-- ------------------------------------------------------------------------------------------------------------------------- -->
 <!-- schedule -->
-<header>
+<header id="view">
     <div class="head_">
       <h1>SCHEDULE</h1>
     </div>
   </header>
 
-  <div class="tabs_">
+  <div class="tabs_" >
     <div class="tab_" onclick="showDay('day1')">
       Day <span class="day-number_ day1-color">01</span>
       <div class="date_">Feb 15, 2025</div>
@@ -160,17 +160,17 @@
             <div class="a22 card">
                 <img src="images/high-speed-transport-abstract-concept-illustration.png" alt="Route">
                 <h1>By Train</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt voluptatibus praesentium temporibus accusamus nesciunt quisquam unde molestias, repudiandae.</p>
+                <p>Tirupati is well-connected by train, with Tirupati Railway Station (TPTY) being the main hub. Major routes include Chennai-Tirupati, Bangalore-Tirupati, and Hyderabad-Tirupati, with frequent trains like Tirupati Express and Sapthagiri Express.</p>
             </div>
             <div class="a22 card">
                 <img src="images/freepik-professional-duotone-travel-agency-logo-202502141354364xSK.png" alt="Route">
                 <h1>By Flight</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt voluptatibus praesentium temporibus accusamus nesciunt quisquam unde molestias, repudiandae.</p>
+                <p>Tirupati Airport (TIR) is located about 15 km from the city and has regular flights from major cities like Hyderabad, Bangalore, and Chennai. Airlines like IndiGo and Air India operate frequent services. From the airport, taxis and APSRTC buses are available to reach Tirupati</p>
             </div>
             <div class="a22 card">
                 <img src="images/car-company-logo-template.png" alt="Route">
                 <h1>By Car</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt voluptatibus praesentium temporibus accusamus nesciunt quisquam unde molestias, repudiandae.</p>
+                <p>Tirupati is well-connected by road, with highways linking it to major cities like Chennai (135 km via NH716), Bangalore (250 km via NH75), and Hyderabad (560 km via NH44). Private cars, taxis, and rental services are widely available.</p>
             </div>
         <!-- </div> -->
     </div>
@@ -194,7 +194,7 @@
             </div> -->
         <!-- </div> -->
 
-</div>
+<!-- </div> -->
 
 <!-- getthere -->
 <!-- -------------------------------------------------- -->
@@ -203,9 +203,10 @@
 <!-- ---------------------------------------------------------------------------------------- -->
 
 <!-- footerr -->
-<div id="d5">
+<div id="d5" >
+    <div id="view2"></div>
 <section id="faq" class="faq">
-    <h1 class="place fa_head">FAQ</h1>
+    <h1 class="place fa_head" >FAQ</h1>
 
     <div class="row">
 
@@ -280,8 +281,9 @@
 </section>
 </div>
 
-
 </div>
+
+<!-- </div> -->
 
 <!-- FAQ section ends -->
 <!-- -------------------------------------------------- -->
