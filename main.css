@@ -40,7 +40,7 @@ body {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 100%;
     padding: 1rem 2rem;
     position: fixed;
@@ -81,9 +81,15 @@ body {
 .header .navbar ul li a:hover{
     color:#ccc;
 }
-
+#chaingestyle{
+    display: none;
+}
 
 @media(max-width:768px){
+    #chaingestyle{
+        display: block;
+        font-size: 1.9rem;
+    }
     html{
         font-size: 50%;
     }
@@ -92,7 +98,7 @@ body {
     }
     .header .navbar{
         position:fixed;
-        top: 28px;right:130%;
+        top: 33px;right:130%;
         height:auto;
         width:100%;
         background-color:#fff;
@@ -204,6 +210,14 @@ body {
 	will-change: transform;
 	transition: transform var(--transition);
 }
+@media screen and (max-width: 668px) {
+    .layers__container {
+        height: 100vw;
+        min-height: 100px;
+        
+    }
+    
+}
 .layers__item {
 	position: absolute;
 	inset: -5vw;
@@ -252,7 +266,7 @@ body {
 .button-start {
 	font-family: Arial;
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: calc(var(--index) * .71);
 	letter-spacing: -.02vw;
 	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
@@ -1016,6 +1030,7 @@ html{
     height:500px; /* Adjusted height for proper video display */
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4); /* Adding slight shadow */
     overflow: hidden; /* Ensures that the video stays within the footer bounds */
+    z-index: 100;
 }
 
 /* Background video styles */
