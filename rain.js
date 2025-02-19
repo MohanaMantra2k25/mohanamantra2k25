@@ -41,45 +41,45 @@ function showDay(day) {
   });
 
 
-        function changeVideoSource(newSrc, isClicked = false) {
-            let video = $("#videoPlayer");
+//         function changeVideoSource(newSrc, isClicked = false) {
+//             let video = $("#videoPlayer");
 
-            // Smooth fade-out
-            video.css("opacity", "0");
+//             // Smooth fade-out
+//             video.css("opacity", "0");
 
-            setTimeout(function () {
-                video.attr("src", newSrc); // Change video source
-                video[0].load();
-                video[0].play(); // Ensure it plays immediately
+//             setTimeout(function () {
+//                 video.attr("src", newSrc); // Change video source
+//                 video[0].load();
+//                 video[0].play(); // Ensure it plays immediately
                 
-                // Restore visibility
-                video.css("opacity", "1");
+//                 // Restore visibility
+//                 video.css("opacity", "1");
 
-                // Apply brightness filter (dim for first two videos, normal for clicked one)
-                if (isClicked) {
-                    video.css("filter", "brightness(100%) contrast(100%)"); // Normal brightness
-                } else {
-                    video.css("filter", "brightness(50%) contrast(90%)"); // Dim effect
-                }
-            }, 500); // Delay for smooth transition
-        }
+//                 // Apply brightness filter (dim for first two videos, normal for clicked one)
+//                 if (isClicked) {
+//                     video.css("filter", "brightness(100%) contrast(100%)"); // Normal brightness
+//                 } else {
+//                     video.css("filter", "brightness(50%) contrast(90%)"); // Dim effect
+//                 }
+//             }, 500); // Delay for smooth transition
+//         }
 
-        $(".layers").mouseenter(function () {
-            changeVideoSource(hoverSrc);
-        });
-        $(".layers").mouseleave(function () {
-            changeVideoSource(originalSrc);
-        });
+//         $(".layers").mouseenter(function () {
+//             changeVideoSource(hoverSrc);
+//         });
+//         $(".layers").mouseleave(function () {
+//             changeVideoSource(originalSrc);
+//         });
 
-        $(".layers").click(function () {
-            clearTimeout(timeoutId); // Clear any existing timeout
-            changeVideoSource(clickSrc, true); // Normal brightness when clicked
+//         $(".layers").click(function () {
+//             clearTimeout(timeoutId); // Clear any existing timeout
+//             changeVideoSource(clickSrc, true); // Normal brightness when clicked
 
-            // Revert to hover video (dimmed) after 5 seconds
-            timeoutId = setTimeout(function () {
-                changeVideoSource(hoverSrc);
-            }, 4000);
-        });
+//             // Revert to hover video (dimmed) after 5 seconds
+//             timeoutId = setTimeout(function () {
+//                 changeVideoSource(hoverSrc);
+//             }, 4000);
+//         });
 // opening
 
 
