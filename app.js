@@ -14,40 +14,12 @@ document.addEventListener('mousemove', e => {
 
 
 
-document.getElementById("schedules").addEventListener("click", function () {
-    const currentScroll = window.scrollY;
-    const targetScroll = window.innerHeight;
-
-    if (currentScroll < targetScroll - 10 || currentScroll > targetScroll + 10) {
-        // Scroll to 100vh only if not already there
-        window.scrollTo({
-            top: targetScroll,
-            behavior: "smooth"
-        });
-    }
-	document.getElementById("over_over").scrollTo({
-        top: 0, 
-        behavior: "smooth" // Smooth scrolling effect
-    });
-});
-
-
-document.getElementById("faqs").addEventListener("click", function () {
-	const currentScroll = window.scrollY;
-    const targetScroll = window.innerHeight+20;
-
-    if (currentScroll < targetScroll - 10 || currentScroll > targetScroll + 10) {
-        // Scroll to 100vh only if not already there
-        window.scrollTo({
-            top: targetScroll,
-            behavior: "smooth"
-        });
-    }
-    document.getElementById("over_over").scrollBy({
-        top: document.getElementById("over_over").scrollHeight, // Adjust the value as needed
-        behavior: "smooth"
-    });
-});
+function scrollToSection() {
+    document.getElementById("view").scrollIntoView({ behavior: "smooth" });
+}
+function scrollToSection2() {
+    document.getElementById("view2").scrollIntoView({ behavior: "smooth" });
+}
 
 
 
